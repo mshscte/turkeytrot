@@ -74,19 +74,19 @@ body {
 }
 
 #clothes {
-    background-color: dar;
+    background-color: orange;
     width: 100vw;
     height: 100%;
 }
 
 #fees {
-    background-color: yellow;
+    background-color: darkorange;
     width: 100vw;
     height: 100%;
 }
 
 #ourmission {
-    background-color: yellow;
+    background-color: red;
     width: 100vw;
     height: 100%;
 }
