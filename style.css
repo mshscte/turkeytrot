@@ -15,6 +15,25 @@ body {
     font-family: sans-serif;
     padding: 0;
     margin: 0;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+  
+::-webkit-scrollbar-track {
+background: #615140;
+}
+
+::-webkit-scrollbar-thumb {
+background: #ecd189;
+transition: 0.2s;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
 }
 
 #header {
@@ -36,22 +55,27 @@ body {
 #header a {
     flex-grow: 1;
     text-align: center;
-    color: white;
+    color: #615140;
+    font-weight: bold;
     text-decoration: none;
-    background-color: #ffbb00;
+    background-color: #ecd189;
     border-radius: 6px;
     margin-left: 16px;
     margin-right: 16px;
     padding: 8px;
     height: 1em;
+    border: 2px solid #ecd189;
 
-    box-shadow: 0 16px 0 0 rgba(255, 255, 255, 0.342) inset;
+    
+
+    box-shadow: 0 16px 0 0 rgba(255, 255, 255, 0.404) inset, 0 4px 6px 2px rgba(0, 0, 0, 0.377);
 }
 
 .section {
     width: 100vw;
     padding: 0;
-    
+    margin: 0;
+    overflow: hidden;
 }
 
 #top {
@@ -67,16 +91,41 @@ body {
     justify-content: center;
 }
 
-
 #register {
-    background-color: yellow;
-    height: 100%;
+    text-decoration: none;
+    color: #fedf96;
+    background-color: #231f20;
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    padding: 16px;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 6vw;
+    text-shadow: 6px 6px 10px rgb(0, 0, 0);
+    box-shadow: 0 0 16px 0 rgba(0, 0, 0) inset;
+    transition: 0.2s;
+    box-sizing: border-box;
 }
 
 #datesandtimes {
     background-color: goldenrod;
     height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
+
+#datesandtimes .info{
+    width: 50%;
+    display: block;
+    text-align: center;
+}
+
+
 
 #howtoparticipate {
     background-color: darkgoldenrod;
