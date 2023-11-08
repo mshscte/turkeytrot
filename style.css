@@ -66,9 +66,14 @@ h1, h2, h3, h4, h5, h6 {
     height: 1em;
     border: 2px solid #ecd189;
 
-    
+    transition: 0.2s;
 
     box-shadow: 0 16px 0 0 rgba(255, 255, 255, 0.404) inset, 0 4px 6px 2px rgba(0, 0, 0, 0.377);
+}
+
+#header a:hover {
+    background-color: #ffbb00;
+    border: 2px solid #ffbb00;
 }
 
 .section {
@@ -108,10 +113,73 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 0 0 16px 0 rgba(0, 0, 0) inset;
     transition: 0.2s;
     box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box
+}
+
+#trLeaf {
+    top: -100%;
+    right: -100%;
+    transform: rotate(-143deg);
+}
+
+#tlLeaf {
+    top: -100%;
+    left: -100%;
+    transform: rotate(124deg);
+}
+
+#brLeaf {
+    bottom: -100%;
+    right: -100%;
+    transform: rotate(-35deg);
+}
+
+#blLeaf {
+    bottom: -100%;
+    left: -100%;
+    transform: rotate(66deg);
+}
+
+#register:hover #trLeaf {
+    top: -4px;
+    right: -10px;
+}
+
+#register:hover #tlLeaf {
+    top: -15px;
+    left: -20px;
+}
+
+#register:hover #brLeaf {
+    bottom: -15px;
+    right: -14px;
+}
+
+#register:hover #blLeaf {
+    bottom: -9px;
+    left: -16px;
+}
+
+#register img {
+    position: absolute;
+    width: 95%;
+    transition: 1s;
+}
+
+#register-text {
+    z-index: 10;
+    position: relative;
+}
+
+#register:active {
+    filter: saturate(.8)
 }
 
 #datesandtimes {
-    background-color: goldenrod;
+    background-color: rgba(236, 209, 137, .8);
+    box-shadow: 5px 5px 5px 5px rgba(236, 209, 137, .8);
     height: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -124,8 +192,6 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
     text-align: center;
 }
-
-
 
 #howtoparticipate {
     background-color: darkgoldenrod;
