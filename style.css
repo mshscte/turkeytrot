@@ -85,7 +85,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #top {
     height: 100vh;
-    backdrop-filter: blur(2px);
+
 }
 
 #logo {
@@ -115,7 +115,7 @@ h1, h2, h3, h4, h5, h6 {
     box-sizing: border-box;
     position: relative;
     overflow: hidden;
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 
 #trLeaf {
@@ -148,8 +148,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #register:hover #tlLeaf {
-    top: -15px;
-    left: -20px;
+    top: -20px;
+    left: -36px;
 }
 
 #register:hover #brLeaf {
@@ -179,7 +179,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #datesandtimes {
     background-color: rgba(236, 209, 137, .8);
-    box-shadow: 5px 5px 5px 5px rgba(236, 209, 137, .8);
+    box-shadow: 5px 5px 5px 5px rgba(236, 209, 137, .8), -5px -5px 5px 5px rgba(236, 209, 137, .8);
     height: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -191,22 +191,16 @@ h1, h2, h3, h4, h5, h6 {
     width: 50%;
     display: block;
     text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
-#howtoparticipate {
-    background-color: darkgoldenrod;
-    height: 100%;
-}
 
 #clothes {
     background-color: orange;
     height: 100%;
 }
 
-#fees {
-    background-color: darkorange;
-    height: 100%;
-}
 
 #ourmission {
     background-color: red;
