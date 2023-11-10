@@ -7,6 +7,10 @@
     --header-height: 35px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-image: url("static/bg.jpg");
     background-size: cover;
@@ -16,6 +20,7 @@ body {
     padding: 0;
     margin: 0;
     overflow-x: hidden;
+    
 }
 
 ::-webkit-scrollbar {
@@ -177,17 +182,24 @@ h1, h2, h3, h4, h5, h6 {
     filter: saturate(.8)
 }
 
-#datesandtimes {
-    background-color: rgba(236, 209, 137, .8);
-    box-shadow: 5px 5px 5px 5px rgba(236, 209, 137, .8), -5px -5px 5px 5px rgba(236, 209, 137, .8);
-    height: 100%;
+.section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
-#datesandtimes .info{
+#datesandtimes {
+    background-color: rgba(233, 148, 105, .8);
+    box-shadow: 5px 5px 5px 5px rgba(233, 148, 105, .8), -5px -5px 5px 5px rgba(233, 148, 105, .8);
+    
+    height: 100%;
+    
+}
+
+.info{
     width: 50%;
     display: block;
     text-align: center;
@@ -195,6 +207,10 @@ h1, h2, h3, h4, h5, h6 {
     box-sizing: border-box;
 }
 
+#moreinfo {
+    background-color: rgba(188, 89, 82, .8);
+    box-shadow: 5px 5px 5px 5px rgba(188, 89, 82, .8), -5px -5px 5px 5px rgba(188, 89, 82, .8);
+}
 
 #clothes {
     background-color: orange;
