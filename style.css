@@ -1,3 +1,13 @@
+@font-face {
+    font-family: Headers;
+    src: url(static/LilitaOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: Body;
+    src: url(static/PlaypenSans-VariableFont_wght.ttf);
+}
+
 :root {
     --background-color: white;
     --accent-color: gray;
@@ -16,7 +26,7 @@ body {
     background-size: cover;
     min-height: 100vh;
     width: 100vw;
-    font-family: sans-serif;
+    font-family: Body, sans-serif;
     padding: 0;
     margin: 0;
     overflow-x: hidden;
@@ -39,6 +49,7 @@ transition: 0.2s;
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
     padding: 0;
+    font-family: Headers, sans-serif;
 }
 
 #header {
@@ -68,6 +79,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-left: 16px;
     margin-right: 16px;
     padding: 8px;
+    padding-top: 0;
     height: 1em;
     border: 2px solid #ecd189;
 
@@ -174,8 +186,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #register-text {
-    z-index: 10;
+    z-index: 5;
     position: relative;
+    font-family: Headers, sans-serif;
+    font-weight: bold;
 }
 
 #register:active {
@@ -188,15 +202,17 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center;
     align-items: center;
     padding: 10px;
+    margin-bottom: 15px;
     box-sizing: border-box;
+    font-size: 2vw;
+    font-style: italic bold;
+    
 }
 
 #datesandtimes {
     background-color: rgba(233, 148, 105, .8);
     box-shadow: 5px 5px 5px 5px rgba(233, 148, 105, .8), -5px -5px 5px 5px rgba(233, 148, 105, .8);
-    
     height: 100%;
-    
 }
 
 .info{
@@ -218,7 +234,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-#ourmission {
-    background-color: red;
-    height: 100%;
+#mission {
+    background-color: rgba(247, 228, 170, .8);
+    box-shadow: 5px 5px 5px 5px rgba(247, 228, 170, .8), -5px -5px 5px 5px rgba(247, 228, 170, .8);
+    display: block;
+    text-align: center;
 }
