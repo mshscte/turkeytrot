@@ -1,4 +1,4 @@
-@font-face {
+/*@font-face {
     font-family: Headers;
     src: url(static/LilitaOne-Regular.ttf);
 }
@@ -6,7 +6,7 @@
 @font-face {
     font-family: Body;
     src: url(static/PlaypenSans-VariableFont_wght.ttf);
-}
+}*/
 
 :root {
     --background-color: white;
@@ -14,7 +14,7 @@
     --font-color: black;
     --link-color: blue;
     
-    --header-height: 35px;
+    --header-height: 45px;
 }
 
 html {
@@ -22,15 +22,19 @@ html {
 }
 
 body {
-    background-image: url("static/bg.jpg");
+    background-image: url("static/back.png");
     background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     min-height: 100vh;
     width: 100vw;
-    font-family: Body, sans-serif;
+    /*font-family: Body, sans-serif;*/
+    font-family: Chaloops-Medium, Chaloops;
     padding: 0;
     margin: 0;
     overflow-x: hidden;
-    
+           
 }
 
 ::-webkit-scrollbar {
@@ -49,7 +53,7 @@ transition: 0.2s;
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
     padding: 0;
-    font-family: Headers, sans-serif;
+    font-family: Chaloops-Medium, Chaloops;
 }
 
 #header {
@@ -63,25 +67,26 @@ h1, h2, h3, h4, h5, h6 {
     padding: 8px;
     box-sizing: border-box;
     z-index: 10;
-    background-color: rgb(255, 128, 0, 0.75);
-    box-shadow: 0 7px 16px 16px rgb(255, 128, 0, 0.75);
+    background-color: rgba(13, 122, 185, .75);
+    box-shadow: 0 7px 16px 16px rgb(13, 122, 185, .75);
     margin: 0;
 } 
 
 #header a {
     flex-grow: 1;
     text-align: center;
-    color: #615140;
+    color: #3f3f3f;
+    font-family: sans-serif;
     font-weight: bold;
+    font-size: 2vw;
     text-decoration: none;
-    background-color: #ecd189;
     border-radius: 6px;
     margin-left: 16px;
     margin-right: 16px;
     padding: 8px;
-    padding-top: 0;
     height: 1em;
-    border: 2px solid #ecd189;
+    background-color: rgba(86, 152, 128);
+    border: 2px solid rgba(86, 152, 128, .8);
 
     transition: 0.2s;
 
@@ -89,8 +94,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header a:hover {
-    background-color: #ffbb00;
-    border: 2px solid #ffbb00;
+    background-color: rgb(86, 152, 86);
+    border: 2px solid rgba(86, 152, 86, .8);
+    transform: scale(1.1) translateY(3px);
 }
 
 .section {
@@ -102,15 +108,34 @@ h1, h2, h3, h4, h5, h6 {
 
 #top {
     height: 100vh;
-
+    padding-top: 60px;
 }
 
 #logo {
     display: flex;
-    flex-direction: row;
-    width: 100vw;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    text-align: center;
+    font-size: 4em;
+    color: #624e3a;
+    -webkit-text-stroke: 2px black;
+    
+}
+#logo h5 {
+    text-align: left;
+    text-shadow: 8px 8px 0 black;
+    -webkit-text-stroke: 2px black;
+
+
+}
+#logo h3 {
+    text-align: right;
+    color: #fbe7a3;
+    text-shadow: -8px -8px 0 black;
+    -webkit-text-stroke: 2px black;
+
 }
 
 #register {
@@ -188,12 +213,17 @@ h1, h2, h3, h4, h5, h6 {
 #register-text {
     z-index: 5;
     position: relative;
-    font-family: Headers, sans-serif;
+    font-family: Chaloops-Medium, Chaloops;
     font-weight: bold;
 }
 
 #register:active {
     filter: saturate(.8)
+}
+
+#sectionwrapper {
+    background: rgb(247,228,170);
+    background: linear-gradient(153deg, rgba(247,228,170,0.8) 0%, rgba(188,89,82,0.8) 100%, rgba(188,89,82,0.18) 100%);
 }
 
 .section {
@@ -210,8 +240,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #datesandtimes {
-    background-color: rgba(233, 148, 105, .8);
-    box-shadow: 5px 5px 5px 5px rgba(233, 148, 105, .8), -5px -5px 5px 5px rgba(233, 148, 105, .8);
+    
     height: 100%;
 }
 
@@ -224,19 +253,43 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #moreinfo {
-    background-color: rgba(188, 89, 82, .8);
-    box-shadow: 5px 5px 5px 5px rgba(188, 89, 82, .8), -5px -5px 5px 5px rgba(188, 89, 82, .8);
+    
 }
 
 #clothes {
-    background-color: orange;
+    
     height: 100%;
+}
+
+#fees {
+    margin-bottom: 0;
 }
 
 
 #mission {
-    background-color: rgba(247, 228, 170, .8);
-    box-shadow: 5px 5px 5px 5px rgba(247, 228, 170, .8), -5px -5px 5px 5px rgba(247, 228, 170, .8);
     display: block;
     text-align: center;
+}
+
+/*
+background-color: rgba(233, 148, 105, .8);
+box-shadow: 5px 5px 5px 5px rgba(233, 148, 105, .8), -5px -5px 5px 5px rgba(233, 148, 105, .8);
+
+background-color: rgba(188, 89, 82, .8);
+box-shadow: 5px 5px 5px 5px rgba(188, 89, 82, .8), -5px -5px 5px 5px rgba(188, 89, 82, .8);
+
+background-color: rgba(147, 73, 72, .8);
+box-shadow: 5px 5px 5px 5px rgba(147, 73, 72, .8), -5px -5px 5px 5px rgba(147, 73, 72, .8);
+
+background-color: rgba(247, 228, 170, .8);
+box-shadow: 5px 5px 5px 5px rgba(247, 228, 170, .8), -5px -5px 5px 5px rgba(247, 228, 170, .8);
+
+background-color: rgba(104, 149, 129, .8);
+box-shadow: 5px 5px 5px 5px rgba(104, 149, 129, .8), -5px -5px 5px 5px rgba(104, 149, 129, .8);
+*/
+
+@media only screen and (max-width: 650px) {
+    #header {
+        display: none;
+    }
 }
