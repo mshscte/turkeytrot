@@ -87,9 +87,7 @@ h1, h2, h3, h4, h5, h6 {
     height: 1em;
     background-color: rgba(86, 152, 128);
     border: 2px solid rgba(86, 152, 128, .8);
-
     transition: 0.2s;
-
     box-shadow: 0 16px 0 0 rgba(255, 255, 255, 0.404) inset, 0 4px 6px 2px rgba(0, 0, 0, 0.377);
 }
 
@@ -97,6 +95,11 @@ h1, h2, h3, h4, h5, h6 {
     background-color: rgb(86, 152, 86);
     border: 2px solid rgba(86, 152, 86, .8);
     transform: scale(1.1) translateY(3px);
+}
+
+#header a:active {
+    background-color: rgb(69, 165, 69);
+    transform: scale(1) translateY(3px);
 }
 
 .section {
@@ -140,8 +143,9 @@ h1, h2, h3, h4, h5, h6 {
 
 #register {
     text-decoration: none;
+    background: linear-gradient(153deg, rgba(109,173,150,1) 0%, rgba(50,80,119,1) 100%);
+    text-shadow: 4px 4px 8px black;
     color: #fedf96;
-    background-color: #231f20;
     display: block;
     text-align: center;
     margin-left: auto;
@@ -151,15 +155,27 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 12px;
     font-weight: bold;
     font-size: 6vw;
-    text-shadow: 6px 6px 10px rgb(0, 0, 0);
-    box-shadow: 0 0 16px 0 rgba(0, 0, 0) inset;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0) inset, 0 0 16px 0 black;
     transition: 0.2s;
     box-sizing: border-box;
     position: relative;
     overflow: hidden;
     box-sizing: border-box;
+    transition: 0.2s;
 }
 
+#register:hover {
+    text-shadow: 4px 4px 8px black;
+    transition: 0.5s;
+    filter: saturate(125%);
+
+}
+
+#register:active {
+    transition: .5s;
+    box-shadow: 0 0 16px 0 rgba(0, 0, 0) inset;
+    transform: rotateZ(-10deg) rotateY(-10deg) rotateX(-10deg) scale(.9);
+}
 #trLeaf {
     top: -100%;
     right: -100%;
@@ -217,15 +233,10 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
 }
 
-#register:active {
-    filter: saturate(.8)
-}
-
 #sectionwrapper {
     background: rgb(247,228,170);
-    background: linear-gradient(153deg, rgba(247,228,170,0.8) 0%, rgba(188,89,82,0.8) 100%, rgba(188,89,82,0.18) 100%);
+    background: linear-gradient(180deg, transparent 0%, rgba(247,228,170,0.8) 10%, rgba(188,89,82,0.8) 100%, rgba(188,89,82,0.18) 100%);
 }
-
 .section {
     display: flex;
     flex-wrap: wrap;
@@ -240,7 +251,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #datesandtimes {
-    
     height: 100%;
 }
 
@@ -256,15 +266,28 @@ h1, h2, h3, h4, h5, h6 {
     
 }
 
-#clothes {
-    
+#donations {
     height: 100%;
+    display: block;
+    text-align: center;
+    margin-bottom: 0px;
 }
 
 #fees {
     margin-bottom: 0;
+    display: block;
+    text-align: center;
 }
 
+p {
+    margin-top: -1px;
+    margin-bottom: -.5px;
+}
+
+#calender {
+    width: 47%;
+    margin-right: 2%;
+}
 
 #mission {
     display: block;
