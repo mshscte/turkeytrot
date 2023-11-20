@@ -89,6 +89,7 @@ h1, h2, h3, h4, h5, h6 {
     border: 2px solid rgba(86, 152, 128, .8);
     transition: 0.2s;
     box-shadow: 0 16px 0 0 rgba(255, 255, 255, 0.404) inset, 0 4px 6px 2px rgba(0, 0, 0, 0.377);
+    
 }
 
 #header a:hover {
@@ -245,9 +246,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 10px;
     margin-bottom: 15px;
     box-sizing: border-box;
-    font-size: 2vw;
-    font-style: italic bold;
-    
+    font-size: 2vw;    
 }
 
 #datesandtimes {
@@ -270,7 +269,6 @@ h1, h2, h3, h4, h5, h6 {
     height: 100%;
     display: block;
     text-align: center;
-    margin-bottom: 0px;
 }
 
 #fees {
@@ -292,6 +290,24 @@ p {
 #mission {
     display: block;
     text-align: center;
+}
+
+#org {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-bottom: 0px;
+
+}
+
+#org p {
+    display: block;
+    font-size: 3vw;
+}
+
+#org img {
+    display: block;
 }
 
 /*
