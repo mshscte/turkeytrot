@@ -100,7 +100,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #header a:active {
     background-color: rgb(69, 165, 69);
-    transform: scale(1) translateY(3px);
+    transform: rotateZ(-1deg) rotateY(-1deg) rotateX(-1deg) scale(1) translateY(3px);
 }
 
 .section {
@@ -283,8 +283,11 @@ p {
 }
 
 #calender {
-    width: 47%;
     margin-right: 2%;
+    padding: 0;
+    width: 46%;
+    filter: grayscale(1) invert(1);
+    box-shadow: 0 0 10px 2px white;
 }
 
 #mission {
