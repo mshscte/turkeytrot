@@ -177,54 +177,21 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 0 0 16px 0 rgba(0, 0, 0) inset;
     transform: rotateZ(-10deg) rotateY(-10deg) rotateX(-10deg) scale(.9);
 }
-#trLeaf {
-    top: -100%;
-    right: -100%;
-    transform: rotate(-143deg);
-}
 
-#tlLeaf {
-    top: -100%;
-    left: -100%;
-    transform: rotate(124deg);
-}
-
-#brLeaf {
-    bottom: -100%;
-    right: -100%;
-    transform: rotate(-35deg);
-}
-
-#blLeaf {
-    bottom: -100%;
-    left: -100%;
-    transform: rotate(66deg);
-}
-
-#register:hover #trLeaf {
-    top: -4px;
-    right: -10px;
-}
-
-#register:hover #tlLeaf {
-    top: -20px;
-    left: -36px;
-}
-
-#register:hover #brLeaf {
-    bottom: -15px;
-    right: -14px;
-}
-
-#register:hover #blLeaf {
-    bottom: -9px;
-    left: -16px;
-}
-
-#register img {
+#register #feet {
     position: absolute;
-    width: 95%;
+    left:0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: none;
     transition: 1s;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#register:hover #feet {
+    background: url("static/TurkeyWalking.gif");
+    background-size: cover;
 }
 
 #register-text {
