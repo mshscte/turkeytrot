@@ -19,6 +19,7 @@
 
 html {
     scroll-behavior: smooth;
+    width: 100vw;
 }
 
 body {
@@ -108,11 +109,20 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0;
     margin: 0;
     overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    font-size: 2vw;    
 }
 
 #top {
     height: 100vh;
     padding-top: 60px;
+    overflow-y: visible;
 }
 
 #logo {
@@ -142,6 +152,12 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
+#logo img {
+    max-width: 50vw;
+    width: 75vw;
+    height: 75vh;
+}
+
 #register {
     text-decoration: none;
     background: linear-gradient(153deg, rgba(109,173,150,1) 0%, rgba(50,80,119,1) 100%);
@@ -155,7 +171,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 16px;
     border-radius: 12px;
     font-weight: bold;
-    font-size: 6vw;
+    font-size: 8vw;
     box-shadow: 0 0 0 0 rgba(0, 0, 0) inset, 0 0 16px 0 black;
     transition: 0.2s;
     box-sizing: border-box;
@@ -204,16 +220,6 @@ h1, h2, h3, h4, h5, h6 {
 #sectionwrapper {
     background: rgb(247,228,170);
     background: linear-gradient(180deg, transparent 0%, rgba(247,228,170,0.8) 10%, rgba(188,89,82,0.8) 100%, rgba(188,89,82,0.18) 100%);
-}
-.section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    margin-bottom: 15px;
-    box-sizing: border-box;
-    font-size: 2vw;    
 }
 
 #datesandtimes {
@@ -297,8 +303,61 @@ background-color: rgba(104, 149, 129, .8);
 box-shadow: 5px 5px 5px 5px rgba(104, 149, 129, .8), -5px -5px 5px 5px rgba(104, 149, 129, .8);
 */
 
-@media only screen and (max-width: 650px) {
+#menu {
+    display: none;
+}
+
+@media only screen and (max-width: 475px) {
     #header {
         display: none;
+    }
+    #logo {
+        height: 50vh;
+        width: 100vw;
+        padding: 0;
+        margin: 0;
+    }
+    #logo img {
+        height: unset;
+        width: 100%;
+        max-width: unset;
+        padding: 0;
+        margin: 0;
+    }
+    #register {
+        font-size: 15vw;
+    }
+
+    h1 {
+        font-size: 10vw;
+    }
+    p {
+        font-size: 4vw;
+    }
+    
+    #menu {
+        position: fixed;
+        left: 10px;
+        top: 2px;
+        display: block;
+        width: 5vw;
+        height: 5vw;
+    }
+
+    .menu-bar {
+        width: 35px;
+        height: 5px;
+        background-color: black;
+        margin: 6px 0;
+    }
+
+    .info {
+        width: 100%;
+    }
+    #calender {
+        width: 100%;
+    }
+    #businesslogo {
+        width: 90% !important;
     }
 }
