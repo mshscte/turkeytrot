@@ -311,6 +311,7 @@ box-shadow: 5px 5px 5px 5px rgba(104, 149, 129, .8), -5px -5px 5px 5px rgba(104,
     transition: 0.2s;
     overflow: hidden;
     pointer-events: none;
+    margin-top: 75px;
 }
 #menu-items a {
     display: block;
@@ -318,8 +319,8 @@ box-shadow: 5px 5px 5px 5px rgba(104, 149, 129, .8), -5px -5px 5px 5px rgba(104,
     color: black;
     font-weight: bold;
     text-decoration: none;
-    margin-top: 50px;
     width: fit-content;
+    margin-top: 3px;
 }
 
 #menu:hover {
@@ -331,7 +332,7 @@ box-shadow: 5px 5px 5px 5px rgba(104, 149, 129, .8), -5px -5px 5px 5px rgba(104,
 }
 
 #menu {
-    background-color: rgba(111, 150, 202, .4);
+    background-color: rgba(111, 150, 202, .9);
 }
 
 #menu-items a:hover {
