@@ -360,7 +360,8 @@ box-shadow: 5px 5px 5px 5px rgba(104, 149, 129, .8), -5px -5px 5px 5px rgba(104,
     padding-left: 5vw;
     left: 60vw;
     height: 100%;
-    background-color: rgba(111, 150, 202, .4);
+    background-color: rgba(111, 150, 202, .9);
+    box-shadow: 4px 0 4px rgba(111, 150, 202, .9);
 }
 
 #menu:hover #top-menu-bar {
